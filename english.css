@@ -1,0 +1,163 @@
+body { 
+    margin: 0px;
+    background-color:#d2d5d7;
+    font-family:"Georgia", serif;
+    color:#000;
+    font-size: 130%;
+    line-height: 2;
+}
+/* header*/
+header {
+    height: 1000px;
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    background-image: url(images/header6.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    margin-top: 0%;
+    height: 600px;
+    display: inline-block;
+    line-height: normal;
+    font-size: 140%;
+    font-weight: bold;
+    width: 100%;
+}
+.header h1 {
+   position: absolute;
+   width: 70%;
+   font-size: 200%;
+   top: 25%;
+   left: 15%;
+   right: 15%;
+   color:#fff;
+}
+
+.header p {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    color:#fff;
+ }
+
+/*services*/
+.services {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap:  2%;
+    row-gap: 20px;
+    margin-left: 6%;
+}
+.wrapper div {
+    place-items: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.wrapper div img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.services h2 {
+    text-align: center;
+}
+/*carousel*/
+.carousel {
+    height: 600px; 
+    display: block;
+    position: absolute;
+    z-index: 3;
+    left: 10%;
+    top: 65%;
+    width: 80%;
+    overflow: hidden;
+  }
+
+.carousel__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s ease;
+}
+  
+.carousel__slide {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+ }
+  
+.carousel__arrow {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+.carousel__arrow_right {
+    right: 1%;
+ }
+  
+.carousel__arrow_left {
+    left: 1%;
+}
+    
+.carousel__img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+}
+/*teacher*/
+.teacher {
+    background-image: url(images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    color:#fff;
+}
+.teacher p {
+    display: block;
+    margin-left: 15%;
+    width: 40%;
+}
+.teacher h2 {
+    margin-left: 15%;
+}
+/*contacts*/
+.contacts {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+/*footer*/
